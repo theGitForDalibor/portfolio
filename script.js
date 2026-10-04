@@ -122,6 +122,8 @@ function renderProjects() {
       </div>
     `;
 
+    const statusBadgeClass = isGithubAvailable ? "status-badge-green" : "status-badge-slate";
+
     return `
       <div class="card project-card">
         <div>
@@ -130,15 +132,15 @@ function renderProjects() {
               <div class="project-type-tag">${proj.type}</div>
               <h3 class="project-title">${proj.title}</h3>
             </div>
-            <span class="status-badge ${isGithubAvailable ? 'status-badge-green' : 'status-badge-slate'}">
-              ${isGithubAvailable ? 'OPEN SOURCE' : 'ACTIVE IN-DEV'}
+            <span class="status-badge ${statusBadgeClass}">
+              ${proj.status}
             </span>
           </div>
 
           <p class="project-desc">${proj.description}</p>
 
           <div class="insights-box">
-            <div class="insights-title">Key Engineering Insights:</div>
+            <div class="insights-title">核心实践 / Core Engineering Practices:</div>
             <ul class="insights-list">
               ${highlightsHtml}
             </ul>

@@ -1,7 +1,7 @@
 /**
  * =========================================================================
- * PORTFOLIO_CONFIG - 个人主页集中式数据源
- * 以后新增、修改项目或技术栈时，只需修改本文件对应字段，无需变动 HTML 页面结构。
+ * PORTFOLIO_CONFIG - 个人技术主页集中式数据源
+ * 遵循客观、克制、工程师风格的文案规范
  * =========================================================================
  */
 
@@ -12,82 +12,83 @@ const PORTFOLIO_CONFIG = {
     alias: "Dalibor",
     badge: "Java Backend → AI Agent Engineering",
     title: "Engineering AI Agents on Solid Backend Foundations.",
-    tagline: "基于多年 Java 与分布式后端工程沉淀，向 AI Agent 运行时、状态图编排与自动化云端工作流深度延伸。",
+    tagline: "基于多年 Java 与分布式后端工程经验，持续向 AI Agent Runtime、状态图编排与云端开发工作流延伸。",
+    description: "不止于 LLM API 的调用与应用层集成，持续深入 Agent Runtime、Tool Calling、State Graph、Memory 以及端到端的云端工程实践。",
     location: "Beijing / Remote",
-    statusText: "Ready for Agent & Backend Engineering",
+    statusText: "ALIBABA CLOUD ECS · LIVE",
     githubUsername: "theGitForDalibor",
     githubUrl: "https://github.com/theGitForDalibor",
-    resumeUrl: "#contact", // 可替换为实际简历链接或 PDF 地址
-    email: "contact@senguangai.cn" // 预留联系邮箱
+    resumeUrl: "#contact",
+    email: "contact@senguangai.cn"
   },
 
-  // 核心定位要点（突出差异化优势）
+  // 核心定位要点（Core Perspective / 3 Pillars）
   pillars: [
     {
-      title: "Backend Engineering Grounding",
-      desc: "多年 Java / Spring Boot 微服务与高并发分布式经验，天然具备并发控制、事务状态、网络通信与系统稳定性的底层敏锐度。"
+      title: "Backend Engineering Foundation",
+      desc: "多年 Java / Spring Boot 微服务与分布式系统实践，积累并发控制、事务处理、服务通信与系统稳定性方面的工程经验。"
     },
     {
-      title: "Deep Agent Runtime & Tools",
-      desc: "超越单纯 API 调用层。深入探索 Agent Runtime 循环、状态持久化、内存机制、RAG 以及安全可控的系统级 Tool Calling。"
+      title: "Agent Runtime & Tools",
+      desc: "从模型调用进一步深入 Agent Runtime，探索运行循环、状态管理、Memory、RAG 与 Tool Calling，以及模型与外部系统之间的可靠交互。"
     },
     {
       title: "Cloud-Native Development Workflow",
-      desc: "实践以云服务器、安全网关、code-server 和自主 AI 编码 Agent 为核心的全流程云端工作区，实现代码编辑到容器化交付的闭环。"
+      desc: "将云服务器、HTTPS、code-server 与 AI Coding Agent 结合，实践从浏览器访问、代码修改、测试验证到 Git 与容器交付的完整开发流程。"
     }
   ],
 
-  // 个人技术路线时间轴 (Engineering Journey)
+  // 个人技术演进路线 (Engineering Evolution)
   journey: [
     {
       phase: "01",
       title: "Java Backend & Microservices",
-      desc: "深耕 Java、Spring Boot、分布式微服务架构与企业级高可用服务构建。"
+      desc: "Java、Spring Boot、微服务架构与企业级后端服务开发。"
     },
     {
       phase: "02",
       title: "Distributed Systems & Concurrency",
-      desc: "攻克分布式锁、多线程并发安全、高吞吐消息流与持久化可靠性设计。"
+      desc: "并发控制、分布式协调、消息处理与数据可靠性等系统工程实践。"
     },
     {
       phase: "03",
-      title: "Python & Algorithmic Foundations",
-      desc: "掌握 Python 生态与现代异步并发，打通数据分析与机器学习基础设施桥梁。"
+      title: "Python & Async Foundations",
+      desc: "Python、异步编程与 Agent 应用所需的基础运行环境与工程能力。"
     },
     {
       phase: "04",
       title: "LLM Fundamentals & Structured Output",
-      desc: "深入 Transformer / LLM 核心交互范式，掌握精准 Prompt Engineering 与结构化输出控制。"
+      desc: "理解 LLM 基本交互机制，实践 Prompt Engineering、上下文设计与结构化输出。"
     },
     {
       phase: "05",
-      title: "RAG & Deterministic Tool Calling",
-      desc: "实现知识库语义检索与 Function Calling，建立模型与外部 API / 数据库的确定性交互桥梁。"
+      title: "RAG & Tool Calling",
+      desc: "探索知识检索、Function Calling，以及模型与外部 API、数据库和系统工具之间的交互方式。"
     },
     {
       phase: "06",
       title: "Agent Engineering & Runtime Loops",
-      desc: "从底层实现 Framework-Free 原生 Agent 运行时循环、上下文管理、状态存储与异常恢复。"
+      desc: "从零实现 Framework-Free Agent，理解 Runtime Loop、Context、State、Memory、Tool Calling 与异常处理。"
     },
     {
       phase: "07",
-      title: "LangChain & Ecosystem Integrations",
-      desc: "系统学习并应用 LangChain 提示词模板、输出解析器、检索链与模块化工具抽象。"
+      title: "LangChain & Ecosystem",
+      desc: "通过 LangChain 学习 Agent 应用中的模块化抽象、工具集成、检索与链式执行。"
     },
     {
       phase: "08",
-      title: "LangGraph & Stateful Graph Orchestration",
-      desc: "基于 LangGraph 构建生产级复杂状态机图结构，实现条件分支路由、循环迭代与人在回路机制。"
+      title: "LangGraph & Stateful Orchestration",
+      desc: "基于 LangGraph 探索 State Graph、条件路由、循环执行与 Human-in-the-loop 等状态化 Agent 模式。"
     },
     {
       phase: "09",
       title: "Practical AI Agent Applications",
-      desc: "将 Agent 理论落地为解决实际工程问题的应用产品，探索真实开发场景中的协作潜能。"
+      desc: "将 Agent Runtime 与工具系统应用于实际工程场景，探索 AI Agent 在开发工作流中的实际价值。"
     },
     {
       phase: "10",
       title: "Cloud AI Development Workflow",
-      desc: "构建属于个人的 Browser → Agent → Cloud Workspace → Git → Docker 全链路端到端闭环。"
+      desc: "将 Browser、Agent、Cloud Workspace、Git 与 Docker 串联起来，形成个人云端 AI 开发工作流。"
     }
   ],
 
@@ -96,13 +97,13 @@ const PORTFOLIO_CONFIG = {
     {
       id: "agentgraph",
       title: "AgentGraph",
-      type: "LangGraph Agent Engineering Learning Project",
-      status: "Active / Engineering Practice",
-      description: "用于系统化深度掌握 LangGraph 的独立工程探索项目。在完成原生 framework-free Agent 实现后，进一步运用 LangGraph 理解生产级 Agent 状态机设计、多节点图拓扑编排、确定性条件路由与工具调用的工程解法。",
+      type: "LangGraph Agent Engineering Practice",
+      status: "Active · Open Source",
+      description: "用于系统学习与实践 LangGraph 的独立工程项目。在完成 Framework-Free Agent Runtime 实现后，进一步通过 LangGraph 探索 State Graph、节点编排、条件路由、循环执行与 Tool Calling 等 Agent 工程模式。",
       keyHighlights: [
-        "生产级 State Graph 状态定义与增量更新流转",
-        "条件分支路由、循环纠错与确定性终结策略",
-        "动态 Tool Calling 与多轮推理图拓扑编排"
+        "State Graph 的状态定义与节点间流转",
+        "条件路由、循环执行与流程终结",
+        "Tool Calling 与多节点 Agent 流程编排"
       ],
       techStack: ["Python", "LangGraph", "Agent Runtime", "Graph Orchestration", "State", "Tool Calling", "Workflow"],
       githubUrl: "https://github.com/theGitForDalibor/AgentGraph",
@@ -111,105 +112,110 @@ const PORTFOLIO_CONFIG = {
     {
       id: "jarvisstudio",
       title: "JarvisStudio",
-      type: "Personal AI Agent (Built from Scratch)",
+      type: "Personal AI Agent · Built from Scratch",
       status: "In Active Development",
-      description: "从底层自研的个人专属 AI Agent，与 Claude Code、Codex 属于同级交互形态。专注于深度探索 Agent Runtime 架构与实用化工具执行，内建系统级 Shell、文件系统、Git、HTTP 工具链，支持长会话记忆、流式交互与 Human-in-the-loop 安全审核控制。",
+      description: "从底层实现的个人 AI Agent 项目，用于深入探索 Agent Runtime、工具执行与交互式开发流程。整体交互形态与 Claude Code、Codex 等 Coding Agent 类似，并独立实现自己的 Runtime 与工具系统。",
       keyHighlights: [
-        "独立原生 Agent 循环，非外部 Gateway 拼装",
-        "系统级安全工具调用 (Shell, File, Git, HTTP)",
-        "支持 Streaming 流式输出与人类介入审核 (Approval)"
+        "独立实现 Agent Runtime Loop 与任务执行流程",
+        "系统级工具集成：Shell、File、Git、HTTP",
+        "Streaming、Session 与 Human-in-the-loop Approval",
+        "持续探索 Memory、Workflow 与 Agent 应用能力"
       ],
       techStack: ["Python", "Agent Runtime", "Tool Calling", "Shell Tool", "Git Tool", "Streaming", "Human-in-the-loop", "Memory"],
-      githubUrl: null, // 内部核心项目，暂无公开外部链接
+      githubUrl: null, // 内部开发项目，无公开外部仓库链接
       isPrimary: true
     }
   ],
 
-  // 个人云端 AI 开发工作流 (Cloud AI Development Workflow)
+  // 个人云端 AI 开发工作流 (Personal Cloud AI Development Workflow)
   workflow: {
     title: "Personal Cloud AI Development Workflow",
     tagline: "Browser → Agent → Cloud Workspace → Git → Docker → Deploy",
-    description: "这是我实际在用的个人云端开发基础设施。摆脱对单一物理笔记本的依赖，通过安全 HTTPS + 认证网关连入阿里云云端工作区，调度 Claude Code、Codex 与 JarvisStudio 自主完成从需求分析、代码修改、pytest 验证到 Git 提交与 Docker 镜像交付的完整闭环。",
+    description: "通过 HTTPS 访问云端 code-server 工作区，在远程环境中运行 Claude Code、Codex 与 JarvisStudio。Agent 可以参与需求分析、代码修改、测试验证、Git 提交以及 Docker 构建，形成一套实际可用的个人云端开发工作流。",
+    conceptStatement: "将开发环境迁移到云端，让 AI Agent 可以在远程工作区中参与代码修改、测试、版本控制与部署，同时保留人工审核与最终决策。",
     steps: [
       {
         icon: "monitor",
         step: "01",
         name: "Client Access",
-        detail: "浏览器 / 移动端通过 Caddy HTTPS (:443) 与前置基本认证安全穿透"
+        detail: "浏览器 / 移动端通过 HTTPS 访问云端开发环境，并由前置认证控制访问入口。"
       },
       {
         icon: "terminal",
         step: "02",
-        name: "IDE & PTY Guard",
-        detail: "code-server 运行于 127.0.0.1，系统级 PTY 会话离线保持 3 小时以上不断线"
+        name: "Remote Workspace",
+        detail: "code-server 提供浏览器端开发环境，终端与工作区运行在云服务器上。"
       },
       {
         icon: "cpu",
         step: "03",
         name: "AI Agent Execution",
-        detail: "Claude Code / Codex / JarvisStudio 在宿主机终端调用国内直连 LLM API 执行任务"
+        detail: "Claude Code / Codex / JarvisStudio 在云端终端中运行，通过模型 API 执行代码分析、修改与工具调用。"
       },
       {
         icon: "folder",
         step: "04",
         name: "Workspace Verification",
-        detail: "Agent 在独立工作区自主读写代码，运行本地 pytest 单元测试确保质量"
+        detail: "Agent 在工作区中读写代码并运行测试，通过实际执行结果验证修改。"
       },
       {
         icon: "git",
         step: "05",
         name: "Git & GitHub Sync",
-        detail: "使用隔离的 ed25519 密钥安全完成 Git commit 并推送到专属 GitHub 仓库"
+        detail: "通过独立 SSH 密钥完成 Git 提交与 GitHub 仓库同步。"
       },
       {
         icon: "box",
         step: "06",
         name: "Docker Build & Deploy",
-        detail: "容器化自动构建镜像，完成云端服务运行与健康探针全流程闭环"
+        detail: "通过 Docker / Compose 构建并运行应用，将验证后的代码进一步部署到云端。"
       }
     ],
     techComponents: [
-      "Alibaba Cloud ECS (Ubuntu)",
-      "Caddy (HTTPS + Basic Auth)",
-      "code-server 4.140",
-      "Claude Code & Codex CLI",
-      "Docker 29 & Compose",
-      "Git & GitHub Deploy Keys"
+      "Alibaba Cloud ECS",
+      "Ubuntu Linux",
+      "Caddy",
+      "code-server",
+      "Claude Code",
+      "Codex CLI",
+      "Docker",
+      "Git",
+      "GitHub"
     ]
   },
 
-  // 技能矩阵 (按领域清晰分类，拒绝粗糙打星)
+  // 技能矩阵 (按领域客观归类，无主观打星)
   skillCategories: [
     {
       name: "Backend & Systems",
       icon: "server",
-      skills: ["Java", "Spring Boot", "Spring Cloud", "Microservices", "Distributed Systems", "MySQL / SQLite", "Redis", "RESTful APIs", "Concurrency Programming"]
+      skills: ["Java", "Spring Boot", "Spring Cloud", "Microservices", "Distributed Systems", "MySQL", "SQLite", "Redis", "RESTful APIs", "Concurrency"]
     },
     {
       name: "AI Agent Engineering",
       icon: "cpu",
-      skills: ["Python", "Agent Runtime", "Tool Calling", "LangGraph", "LangChain", "State Graphs", "RAG", "Memory Systems", "Workflow Orchestration"]
+      skills: ["Python", "Agent Runtime", "Tool Calling", "LangGraph", "LangChain", "State Graphs", "RAG", "Memory", "Workflow"]
     },
     {
-      name: "AI Development & Agents",
+      name: "AI Development",
       icon: "sparkles",
-      skills: ["Claude Code", "OpenAI Codex CLI", "JarvisStudio", "Agent-assisted Pair Programming", "Automated TDD Refactoring"]
+      skills: ["Claude Code", "OpenAI Codex CLI", "JarvisStudio", "Agent-assisted Development", "Automated Testing", "Refactoring"]
     },
     {
       name: "Cloud & DevOps",
       icon: "cloud",
-      skills: ["Alibaba Cloud ECS", "Ubuntu Linux", "Docker & Docker Compose", "Caddy Server", "HTTPS / TLS", "Git & GitHub", "Shell Scripting"]
+      skills: ["Alibaba Cloud ECS", "Ubuntu Linux", "Docker", "Docker Compose", "Caddy", "HTTPS / TLS", "Git", "GitHub", "Shell"]
     }
   ],
 
-  // 认证与资质 (Certifications)
+  // 认证与资质 (Professional Credentials)
   certifications: [
     {
       name: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: "Active Credential",
       badgeText: "AWS Certified",
-      desc: "具备云概念、安全合规、核心服务架构以及云端账单与运维支持的系统化能力认证。"
+      desc: "AWS 云基础认证，覆盖云计算基础、核心服务、安全、定价与基础架构等知识领域。"
     }
   ]
 };
