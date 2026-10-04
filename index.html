@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="scroll-smooth">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Yang Yiming | Java Backend → AI Agent Engineer">
   <meta property="og:description" content="Engineering AI Agents on Solid Backend Foundations & Cloud-Native Workflows.">
-  <meta property="og:url" content="https://api.senguangai.cn/">
-  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:url" content="https://portfolio.senguangai.cn/">
   
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   
@@ -22,327 +21,294 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
+  <!-- Modern Self-Contained Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
-  <!-- Subtle Background Effects -->
-  <div class="fixed inset-0 pointer-events-none z-0">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] bg-gradient-radial from-blue-600/15 via-indigo-600/5 to-transparent blur-3xl"></div>
-    <div class="absolute top-[40%] right-[-10%] w-[600px] h-[600px] bg-gradient-radial from-cyan-600/10 via-purple-600/5 to-transparent blur-3xl"></div>
-    <div class="absolute inset-0 bg-grid-pattern opacity-25"></div>
-  </div>
+<body>
+  <!-- Ambient Atmospheric Backgrounds -->
+  <div class="bg-mesh-glow"></div>
+  <div class="bg-grid-dots"></div>
 
   <!-- Header / Navigation -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-dark/80 border-b border-slate-800/80 transition-all">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#hero" class="group flex items-center gap-3 text-slate-100 font-semibold tracking-tight">
-        <span class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-700/80 flex items-center justify-center font-mono text-cyan-400 font-bold group-hover:border-cyan-500/60 transition-colors shadow-sm">
-          Y
-        </span>
-        <div class="flex flex-col">
-          <span class="leading-none text-sm font-bold tracking-wide">Yang Yiming</span>
-          <span class="text-[10px] text-slate-400 font-mono tracking-wider font-normal">theGitForDalibor</span>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="site-logo">
+        <div class="logo-badge">Y</div>
+        <div class="logo-info">
+          <span class="logo-title">Yang Yiming</span>
+          <span class="logo-subtitle">theGitForDalibor</span>
         </div>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
-        <a href="#about" class="hover:text-cyan-400 transition-colors">定位</a>
-        <a href="#journey" class="hover:text-cyan-400 transition-colors">路线</a>
-        <a href="#projects" class="hover:text-cyan-400 transition-colors">核心项目</a>
-        <a href="#workflow" class="hover:text-cyan-400 transition-colors">云端工作流</a>
-        <a href="#skills" class="hover:text-cyan-400 transition-colors">技术栈</a>
-        <a href="#certifications" class="hover:text-cyan-400 transition-colors">认证</a>
+      <nav class="nav-desktop">
+        <a href="#about" class="nav-link">定位</a>
+        <a href="#journey" class="nav-link">路线</a>
+        <a href="#projects" class="nav-link">核心项目</a>
+        <a href="#workflow" class="nav-link">云端工作流</a>
+        <a href="#skills" class="nav-link">技术栈</a>
+        <a href="#certifications" class="nav-link">认证</a>
       </nav>
 
       <!-- Desktop Action -->
-      <div class="hidden md:flex items-center gap-3">
-        <a id="nav-github-link" href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-xs px-3.5 py-1.5 flex items-center gap-2">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      <div class="nav-actions">
+        <a id="nav-github-link" href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           <span>GitHub</span>
         </a>
-        <a href="#contact" class="btn btn-primary text-xs px-3.5 py-1.5">联系交流</a>
+        <a href="#contact" class="btn btn-primary">联系交流</a>
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="md:hidden p-2 text-slate-400 hover:text-slate-100 focus:outline-none">
-        <svg class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="切换导航菜单">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
       </button>
     </div>
 
     <!-- Mobile Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 px-6 py-4 space-y-3">
-      <a href="#about" class="block text-sm py-1.5 text-slate-300 hover:text-cyan-400">定位与核心认知</a>
-      <a href="#journey" class="block text-sm py-1.5 text-slate-300 hover:text-cyan-400">技术路线 Timeline</a>
-      <a href="#projects" class="block text-sm py-1.5 text-slate-300 hover:text-cyan-400">核心项目</a>
-      <a href="#workflow" class="block text-sm py-1.5 text-slate-300 hover:text-cyan-400">云端开发流</a>
-      <a href="#skills" class="block text-sm py-1.5 text-slate-300 hover:text-cyan-400">技能矩阵</a>
-      <a href="#certifications" class="block text-sm py-1.5 text-slate-300 hover:text-cyan-400">专业认证</a>
-      <div class="pt-3 border-t border-slate-800 flex gap-3">
-        <a href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-xs flex-1 text-center py-2">GitHub</a>
-        <a href="#contact" class="btn btn-primary text-xs flex-1 text-center py-2">联系方式</a>
+    <div id="mobile-drawer" class="mobile-drawer">
+      <a href="#about" class="mobile-drawer-link">定位与核心认知</a>
+      <a href="#journey" class="mobile-drawer-link">技术路线 Timeline</a>
+      <a href="#projects" class="mobile-drawer-link">核心项目</a>
+      <a href="#workflow" class="mobile-drawer-link">云端开发流</a>
+      <a href="#skills" class="mobile-drawer-link">技能矩阵</a>
+      <a href="#certifications" class="mobile-drawer-link">专业认证</a>
+      <div class="mobile-drawer-actions">
+        <a href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex:1;">GitHub</a>
+        <a href="#contact" class="btn btn-primary" style="flex:1;">联系交流</a>
       </div>
     </div>
   </header>
 
   <!-- Main Content Container -->
-  <main class="relative z-10 max-w-6xl mx-auto px-6 py-12 space-y-24 md:space-y-32">
+  <main class="main-content">
+    <div class="container">
 
-    <!-- 1. HERO SECTION -->
-    <section id="hero" class="pt-8 md:pt-16 pb-6 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12">
-      <div class="flex-1 space-y-6 max-w-2xl">
-        <!-- Status Indicator -->
-        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/60 shadow-sm">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          <span id="hero-badge-text" class="text-xs font-mono font-medium text-cyan-300">Java Backend → AI Agent Engineering</span>
-        </div>
-
-        <!-- Main Heading -->
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight md:leading-none">
-          Engineering AI Agents on <br class="hidden md:inline"/>
-          <span class="gradient-text">Solid Backend Foundations.</span>
-        </h1>
-
-        <!-- Tagline & Description -->
-        <p class="text-base md:text-lg text-slate-300 leading-relaxed max-w-xl">
-          基于多年 Java 与高可用分布式后端工程底座，向 <span class="text-slate-100 font-semibold">AI Agent 运行时、状态图编排与自动化云端工作流</span> 深度延伸。
-        </p>
-
-        <p class="text-sm text-slate-400 leading-relaxed font-mono">
-          不是单纯调用 LLM API，而是深入 Agent Runtime、Tool Calling、State Machine、Memory 与端到端云端工程交付。
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
-          <a href="#projects" class="btn btn-primary text-sm px-5 py-2.5 flex items-center gap-2 shadow-lg shadow-cyan-950/50">
-            <span>浏览精选项目</span>
-            <svg class="w-4 h-4 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-          </a>
-          <a href="#workflow" class="btn btn-secondary text-sm px-5 py-2.5">
-            <span>探索云端开发流</span>
-          </a>
-          <a id="hero-github-btn" href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-ghost text-sm px-4 py-2.5 text-slate-400 hover:text-white flex items-center gap-2 font-mono">
-            <span>github.com/theGitForDalibor</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Hero Visual / Architecture Preview Widget -->
-      <div class="w-full md:w-[420px] flex-shrink-0">
-        <div class="card p-6 border-slate-700/60 bg-slate-900/60 relative overflow-hidden group">
-          <div class="absolute -top-12 -right-12 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl"></div>
-          
-          <div class="flex items-center justify-between pb-4 border-b border-slate-800 text-xs font-mono text-slate-400">
-            <span class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-              ENGINEERING MATRIX
-            </span>
-            <span>SYSTEM OVERVIEW</span>
-          </div>
-
-          <div class="space-y-4 pt-4 text-xs font-mono">
-            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80 flex items-start gap-3">
-              <span class="px-2 py-0.5 rounded bg-blue-950/80 text-blue-400 border border-blue-800/40 font-bold">CORE</span>
-              <div>
-                <div class="text-slate-200 font-semibold font-sans">Java & Distributed Systems</div>
-                <div class="text-slate-400 text-[11px] mt-0.5">高并发、微服务架构、事务与系统稳定性</div>
-              </div>
+      <!-- 1. HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="status-dot"></span>
+              <span id="hero-badge-text">Java Backend → AI Agent Engineering</span>
             </div>
 
-            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80 flex items-start gap-3">
-              <span class="px-2 py-0.5 rounded bg-indigo-950/80 text-indigo-400 border border-indigo-800/40 font-bold">AGENT</span>
-              <div>
-                <div class="text-slate-200 font-semibold font-sans">LangGraph & Agent Runtime</div>
-                <div class="text-slate-400 text-[11px] mt-0.5">状态图流转、系统级 Tool Calling、人在回路</div>
-              </div>
-            </div>
+            <h1 class="hero-title">
+              Engineering AI Agents on <br>
+              <span class="gradient-text">Solid Backend Foundations.</span>
+            </h1>
 
-            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80 flex items-start gap-3">
-              <span class="px-2 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-bold">CLOUD</span>
-              <div>
-                <div class="text-slate-200 font-semibold font-sans">Cloud AI Development Flow</div>
-                <div class="text-slate-400 text-[11px] mt-0.5">Browser → Agent → Cloud Workspace → Docker</div>
-              </div>
+            <p class="hero-desc">
+              基于多年 Java 与高可用分布式后端工程底座，向 <strong style="color:#ffffff;">AI Agent 运行时、状态图编排与自动化云端工作流</strong> 深度延伸。
+            </p>
+
+            <p class="hero-note">
+              不是单纯调用 LLM API，而是深入 Agent Runtime、Tool Calling、State Machine、Memory 与端到端云端工程交付。
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <span>浏览精选项目</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#workflow" class="btn btn-secondary btn-lg">
+                <span>探索云端开发流</span>
+              </a>
+              <a id="hero-github-btn" href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>github.com/theGitForDalibor</span>
+              </a>
             </div>
           </div>
 
-          <div class="mt-4 pt-3 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-400 font-mono">
-            <span>DEPLOY: ALIBABA CLOUD ECS</span>
-            <span class="text-emerald-400">● LIVE RUNNING</span>
+          <div class="hero-preview">
+            <div class="card hero-card">
+              <div class="hero-card-header">
+                <span>ENGINEERING MATRIX</span>
+                <span>SYSTEM ARCHITECTURE</span>
+              </div>
+              <div class="hero-matrix">
+                <div class="matrix-row">
+                  <span class="matrix-tag matrix-tag-blue">CORE</span>
+                  <div>
+                    <div class="matrix-content-title">Java & Distributed Systems</div>
+                    <div class="matrix-content-desc">高并发、微服务架构、事务与系统稳定性</div>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <span class="matrix-tag matrix-tag-indigo">AGENT</span>
+                  <div>
+                    <div class="matrix-content-title">LangGraph & Agent Runtime</div>
+                    <div class="matrix-content-desc">状态图流转、系统级 Tool Calling、人在回路</div>
+                  </div>
+                </div>
+                <div class="matrix-row">
+                  <span class="matrix-tag matrix-tag-cyan">CLOUD</span>
+                  <div>
+                    <div class="matrix-content-title">Cloud AI Development Flow</div>
+                    <div class="matrix-content-desc">Browser → Agent → Cloud Workspace → Docker</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-card-footer">
+                <span>DEPLOY: ALIBABA CLOUD ECS</span>
+                <span class="live-indicator">● LIVE RUNNING</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 2. ABOUT & THREE PILLARS -->
-    <section id="about" class="space-y-8">
-      <div class="space-y-2">
-        <div class="text-xs font-mono font-medium tracking-widest text-cyan-400 uppercase">Core Perspective</div>
-        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">技术定位：后端工程经验对 AI Agent 的延伸</h2>
-        <p class="text-sm text-slate-400 max-w-2xl">
-          我的定位不是推翻过去的经验从零开始，而是将高可用后端架构师的思维模式注入 AI Agent 领域，构建高确定性、生产级的智能体工程系统。
-        </p>
-      </div>
+      <!-- 2. ABOUT & THREE PILLARS -->
+      <section id="about" class="section-wrapper">
+        <div class="section-header">
+          <div class="section-tag">Core Perspective</div>
+          <h2 class="section-title">技术定位：后端工程经验对 AI Agent 的延伸</h2>
+          <p class="section-desc">
+            我的定位不是推翻过去的经验从零开始，而是将高可用后端架构师的思维模式注入 AI Agent 领域，构建高确定性、生产级的智能体工程系统。
+          </p>
+        </div>
+        <div id="pillars-container" class="pillars-grid">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+      </section>
 
-      <!-- Pillars Cards Grid (Populated dynamically from portfolio-data.js) -->
-      <div id="pillars-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Rendered by script.js -->
-      </div>
-    </section>
-
-    <!-- 3. ENGINEERING JOURNEY (TIMELINE) -->
-    <section id="journey" class="space-y-8">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div class="space-y-2">
-          <div class="text-xs font-mono font-medium tracking-widest text-indigo-400 uppercase">Evolution Pathway</div>
-          <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">个人技术演进路线</h2>
-          <p class="text-sm text-slate-400 max-w-2xl">
+      <!-- 3. ENGINEERING JOURNEY (TIMELINE) -->
+      <section id="journey" class="section-wrapper">
+        <div class="section-header">
+          <div class="section-tag">Evolution Pathway</div>
+          <h2 class="section-title">个人技术演进路线</h2>
+          <p class="section-desc">
             从传统微服务与分布式事务，逐步递进至模型交互、Agent 运行时机制及云端自主协同生态。
           </p>
         </div>
-        <span class="text-xs font-mono text-slate-400">10 MILESTONES</span>
-      </div>
 
-      <!-- Journey Timeline Flow Container -->
-      <div class="card p-6 md:p-8 bg-slate-900/50">
-        <div id="journey-container" class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-          <!-- Rendered by script.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. FEATURED PROJECTS -->
-    <section id="projects" class="space-y-8">
-      <div class="space-y-2">
-        <div class="text-xs font-mono font-medium tracking-widest text-cyan-400 uppercase">Featured Engineering Projects</div>
-        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">核心工程项目实践</h2>
-        <p class="text-sm text-slate-400 max-w-2xl">
-          聚焦于解决实际 Agent 工程问题的真实项目代码。无夸大营销，注重状态机编排与底层运行时可靠性。
-        </p>
-      </div>
-
-      <!-- Project Cards Grid -->
-      <div id="projects-container" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <!-- Rendered by script.js -->
-      </div>
-    </section>
-
-    <!-- 5. PERSONAL CLOUD AI DEVELOPMENT WORKFLOW -->
-    <section id="workflow" class="space-y-8">
-      <div class="space-y-2">
-        <div class="text-xs font-mono font-medium tracking-widest text-blue-400 uppercase">Infrastructure In Practice</div>
-        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">个人云端 AI 开发工作流</h2>
-        <p class="text-sm text-slate-400 max-w-2xl">
-          不是对外宣传的独立软件，而是日常开发中实际稳定运行的个人云端工程基础设施。
-        </p>
-      </div>
-
-      <div class="card p-6 md:p-10 bg-slate-900/70 border-slate-700/80 space-y-8 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <!-- Workflow Banner Statement -->
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
-          <div>
-            <div class="text-sm md:text-base font-semibold text-white font-mono text-cyan-300">
-              Browser → Agent → Cloud Workspace → Git → Docker → Deploy
-            </div>
-            <div class="text-xs text-slate-400 mt-1">
-              摆脱对本地开发机与单一物理硬件的绑定，让 AI Agent 在云端受控沙箱内高效协同。
-            </div>
-          </div>
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-800/80 border border-slate-700 text-xs font-mono text-emerald-400">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            ECS 2C2G · REAL INFRASTRUCTURE
-          </span>
-        </div>
-
-        <!-- Flow Visual Steps Grid -->
-        <div id="workflow-steps-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <!-- Rendered by script.js -->
-        </div>
-
-        <!-- Real Workflow Tech Stack Badges -->
-        <div class="pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-slate-400">
-          <div class="flex items-center gap-2">
-            <span class="text-slate-300 font-semibold">INFRASTRUCTURE STACK:</span>
-          </div>
-          <div id="workflow-tech-container" class="flex flex-wrap gap-2">
-            <!-- Rendered by script.js -->
+        <div class="card journey-container-card">
+          <div id="journey-container" class="journey-grid">
+            <!-- Rendered dynamically by script.js -->
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 6. TECHNICAL STACK -->
-    <section id="skills" class="space-y-8">
-      <div class="space-y-2">
-        <div class="text-xs font-mono font-medium tracking-widest text-indigo-400 uppercase">Capabilities Matrix</div>
-        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">技术栈与工程能力</h2>
-        <p class="text-sm text-slate-400 max-w-2xl">
-          拒绝主观评分，以领域划分技术图谱。融合坚实的企业级后端体系与前沿 Agent 体系。
-        </p>
-      </div>
-
-      <!-- Skills Categories Grid -->
-      <div id="skills-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Rendered by script.js -->
-      </div>
-    </section>
-
-    <!-- 7. CERTIFICATIONS -->
-    <section id="certifications" class="space-y-8">
-      <div class="space-y-2">
-        <div class="text-xs font-mono font-medium tracking-widest text-cyan-400 uppercase">Professional Credentials</div>
-        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">专业资质与认证</h2>
-      </div>
-
-      <div id="certifications-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Rendered by script.js -->
-      </div>
-    </section>
-
-    <!-- 8. FOOTER / CONTACT -->
-    <footer id="contact" class="pt-16 pb-12 border-t border-slate-800/80 space-y-12">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-        <div class="space-y-2 max-w-lg">
-          <div class="text-lg font-bold text-white">Yang Yiming (Dalibor)</div>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            专注 Java 后端高可用架构与 AI Agent 运行时深度结合。欢迎关于 Agent Runtime、LangGraph 实践与云端研发流的技术交流。
+      <!-- 4. FEATURED PROJECTS -->
+      <section id="projects" class="section-wrapper">
+        <div class="section-header">
+          <div class="section-tag">Featured Projects</div>
+          <h2 class="section-title">核心工程项目实践</h2>
+          <p class="section-desc">
+            聚焦于解决实际 Agent 工程问题的真实项目代码。无夸大营销，注重状态机编排与底层运行时可靠性。
           </p>
         </div>
 
-        <div class="flex flex-wrap items-center gap-3">
-          <a href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-xs px-4 py-2 flex items-center gap-2">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            <span>GitHub @theGitForDalibor</span>
-          </a>
-          <button id="copy-email-btn" class="btn btn-primary text-xs px-4 py-2 flex items-center gap-2">
-            <svg class="w-4 h-4 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            <span id="copy-btn-text">复制联系邮箱</span>
-          </button>
+        <div id="projects-container" class="projects-grid">
+          <!-- Rendered dynamically by script.js -->
         </div>
-      </div>
+      </section>
 
-      <div class="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 font-mono gap-4">
-        <div>
-          © <span id="current-year">2026</span> Yang Yiming (Dalibor). Clean, Fast & Independent.
+      <!-- 5. PERSONAL CLOUD AI DEVELOPMENT WORKFLOW -->
+      <section id="workflow" class="section-wrapper">
+        <div class="section-header">
+          <div class="section-tag">Infrastructure In Practice</div>
+          <h2 class="section-title">个人云端 AI 开发工作流</h2>
+          <p class="section-desc">
+            不是对外宣传的独立软件，而是日常开发中实际稳定运行的个人云端工程基础设施。
+          </p>
         </div>
-        <div class="flex items-center gap-4">
-          <span>Zero Framework Overhead</span>
-          <span>•</span>
-          <span>Pure HTML / CSS / Vanilla JS</span>
-        </div>
-      </div>
-    </footer>
 
+        <div class="card workflow-showcase-card">
+          <div class="workflow-top-bar">
+            <div>
+              <div class="workflow-concept-badge">
+                Browser → Agent → Cloud Workspace → Git → Docker → Deploy
+              </div>
+              <div class="workflow-subtext">
+                摆脱对本地开发机与单一物理硬件的绑定，让 AI Agent 在云端受控沙箱内高效协同。
+              </div>
+            </div>
+            <div class="infra-badge">
+              <span class="status-dot"></span>
+              <span>ALIBABA CLOUD ECS · IN PRODUCTION</span>
+            </div>
+          </div>
+
+          <div id="workflow-steps-container" class="workflow-steps-grid">
+            <!-- Rendered dynamically by script.js -->
+          </div>
+
+          <div class="workflow-footer-bar">
+            <span class="workflow-footer-title">INFRASTRUCTURE STACK:</span>
+            <div id="workflow-tech-container" class="workflow-tech-list">
+              <!-- Rendered dynamically by script.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. TECHNICAL STACK -->
+      <section id="skills" class="section-wrapper">
+        <div class="section-header">
+          <div class="section-tag">Capabilities Matrix</div>
+          <h2 class="section-title">技术栈与工程能力</h2>
+          <p class="section-desc">
+            拒绝主观评分，以领域划分技术图谱。融合坚实的企业级后端体系与前沿 Agent 体系。
+          </p>
+        </div>
+
+        <div id="skills-container" class="skills-grid">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+      </section>
+
+      <!-- 7. CERTIFICATIONS -->
+      <section id="certifications" class="section-wrapper">
+        <div class="section-header">
+          <div class="section-tag">Professional Credentials</div>
+          <h2 class="section-title">专业资质与认证</h2>
+        </div>
+
+        <div id="certifications-container" class="cert-grid">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+      </section>
+
+      <!-- 8. FOOTER / CONTACT -->
+      <footer id="contact" class="site-footer">
+        <div class="footer-top">
+          <div>
+            <div class="footer-author">Yang Yiming (Dalibor)</div>
+            <div class="footer-tagline">
+              专注 Java 后端高可用架构与 AI Agent 运行时深度结合。欢迎关于 Agent Runtime、LangGraph 实践与云端研发流的技术交流。
+            </div>
+          </div>
+
+          <div class="footer-actions">
+            <a href="https://github.com/theGitForDalibor" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub @theGitForDalibor</span>
+            </a>
+            <button id="copy-email-btn" class="btn btn-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span id="copy-btn-text">复制联系邮箱</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © <span id="current-year">2026</span> Yang Yiming (Dalibor). Clean, Fast & Independent.
+          </div>
+          <div>
+            Zero Framework Overhead · Pure Semantic HTML / CSS / Vanilla JS
+          </div>
+        </div>
+      </footer>
+
+    </div>
   </main>
 
   <!-- Notification Toast -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none px-4 py-3 rounded-lg bg-slate-900 border border-slate-700 text-xs font-mono text-cyan-300 shadow-xl flex items-center gap-2">
-    <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+  <div id="toast" class="toast-notice">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--emerald);"><polyline points="20 6 9 17 4 12"></polyline></svg>
     <span id="toast-msg">已复制邮箱地址</span>
   </div>
 
