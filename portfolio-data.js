@@ -19,7 +19,7 @@ const PORTFOLIO_CONFIG = {
     githubUsername: "theGitForDalibor",
     githubUrl: "https://github.com/theGitForDalibor",
     resumeUrl: "#contact",
-    email: "contact@senguangai.cn"
+    email: "2366434793@qq.com"
   },
 
   // 核心定位要点（Core Perspective / 3 Pillars）
@@ -113,7 +113,7 @@ const PORTFOLIO_CONFIG = {
       id: "jarvisstudio",
       title: "JarvisStudio",
       type: "Personal AI Agent · Built from Scratch",
-      status: "In Active Development",
+      status: "Active · Open Source",
       description: "从底层实现的个人 AI Agent 项目，用于深入探索 Agent Runtime、工具执行与交互式开发流程。整体交互形态与 Claude Code、Codex 等 Coding Agent 类似，并独立实现自己的 Runtime 与工具系统。",
       keyHighlights: [
         "独立实现 Agent Runtime Loop 与任务执行流程",
@@ -122,7 +122,7 @@ const PORTFOLIO_CONFIG = {
         "持续探索 Memory、Workflow 与 Agent 应用能力"
       ],
       techStack: ["Python", "Agent Runtime", "Tool Calling", "Shell Tool", "Git Tool", "Streaming", "Human-in-the-loop", "Memory"],
-      githubUrl: null, // 内部开发项目，无公开外部仓库链接
+      githubUrl: "https://github.com/theGitForDalibor/JarvisStudio",
       isPrimary: true
     }
   ],
@@ -215,7 +215,18 @@ const PORTFOLIO_CONFIG = {
       issuer: "Amazon Web Services",
       date: "Active Credential",
       badgeText: "AWS Certified",
-      desc: "AWS 云基础认证，覆盖云计算基础、核心服务、安全、定价与基础架构等知识领域。"
+      badgeType: "green",
+      desc: "AWS 云基础认证，覆盖云计算基础、核心服务、安全、定价与基础架构等知识领域。",
+      credentialUrl: "https://www.credly.com/badges/514f089b-4967-466c-af6d-61bf23a81994/public_url"
+    },
+    {
+      name: "AWS Certified Solutions Architect – Associate",
+      issuer: "Amazon Web Services",
+      date: "Certification In Progress",
+      badgeText: "In Progress",
+      badgeType: "amber",
+      desc: "深入学习高可用、容错、可扩展与成本优化的 AWS 分布式系统架构设计与云原生最佳实践。",
+      credentialUrl: null
     }
   ]
 };

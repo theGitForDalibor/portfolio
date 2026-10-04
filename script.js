@@ -212,19 +212,32 @@ function renderCertifications() {
   const container = document.getElementById("certifications-container");
   if (!container || !PORTFOLIO_CONFIG.certifications) return;
 
-  container.innerHTML = PORTFOLIO_CONFIG.certifications.map(cert => `
-    <div class="card cert-card">
-      <div class="cert-logo-box">AWS</div>
-      <div>
-        <div style="display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap;">
-          <div class="cert-card-title">${cert.name}</div>
-          <span class="status-badge status-badge-green">${cert.badgeText}</span>
-        </div>
-        <div class="cert-meta">${cert.issuer} • ${cert.date}</div>
-        <div class="cert-desc">${cert.desc}</div>
+  container.innerHTML = PORTFOLIO_CONFIG.certifications.map(cert => {
+    const badgeClass = cert.badgeType === "green" ? "status-badge-green" : "status-badge-amber";
+    const linkHtml = cert.credentialUrl ? `
+      <div style="margin-top: 0.85rem;">
+        <a href="${cert.credentialUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.72rem; padding: 0.25rem 0.65rem; display: inline-flex; gap: 0.35rem;">
+          <span>查看 Credly 认证徽章</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
       </div>
-    </div>
-  `).join("");
+    ` : "";
+
+    return `
+      <div class="card cert-card">
+        <div class="cert-logo-box">AWS</div>
+        <div style="flex: 1;">
+          <div style="display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap;">
+            <div class="cert-card-title">${cert.name}</div>
+            <span class="status-badge ${badgeClass}">${cert.badgeText}</span>
+          </div>
+          <div class="cert-meta">${cert.issuer} • ${cert.date}</div>
+          <div class="cert-desc">${cert.desc}</div>
+          ${linkHtml}
+        </div>
+      </div>
+    `;
+  }).join("");
 }
 
 // 8. Interactive Features: Navigation, Clipboard Copy & Toast
@@ -250,7 +263,7 @@ function initInteractions() {
 
   if (copyBtn && toast) {
     copyBtn.addEventListener("click", () => {
-      const email = PORTFOLIO_CONFIG.profile?.email || "contact@senguangai.cn";
+      const email = PORTFOLIO_CONFIG.profile?.email || "2366434793@qq.com";
       
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(() => {

@@ -689,6 +689,12 @@ body {
   border: 1px solid rgba(100, 116, 139, 0.3);
 }
 
+.status-badge-amber {
+  background: rgba(120, 53, 15, 0.6);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
 .project-desc {
   font-size: 0.875rem;
   color: #cbd5e1;
